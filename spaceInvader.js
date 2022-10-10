@@ -72,9 +72,8 @@ context.beginPath()
 context.fillStyle = "#66FF00"
 context.rect(425,425,50,50)
 context.fill()
-
 context.beginPath()
-context.strokeStyle = "#66FF00"
+context.fillstyle = "#66FF00"
 context.rect(375,325,50,50)
 context.fill()
 
