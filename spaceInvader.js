@@ -11,6 +11,7 @@ context.rect(200,200,300,300)
 context.fill()
 
 context.beginPath()
+
 context.rect(275,225,50,50);
 context.rect(225,275,50,50);
 context.rect(225,325,50,50);
@@ -26,5 +27,6 @@ context.rect(325,425,50,50);
 context.rect(225,425,50,50);
 context.rect(425,425,50,50);
 context.rect(375,325,50,50);
+
 context.fillStyle = "#66FF00"
 context.fill()
