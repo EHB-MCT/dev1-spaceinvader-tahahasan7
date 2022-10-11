@@ -1,81 +1,37 @@
 "use strict";
 
-
-
 let canvas = document.querySelector("canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 let context = canvas.getContext("2d");
 
+context.beginPath();
+context.fillStyle ="black";
+context.rect(200,200,300,300);
+context.fill();
 
+let x = 225;
+let y = 225;
 
-context.beginPath()
-context.fillStyle ="black"
-context.rect(200,200,300,300)
-context.fill()
-
-
-
-context.beginPath()
-context.fillStyle ="#66FF00"
-context.rect(275,225,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle ="#66FF00"
-context.rect(225,275,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle ="#66FF00"
-context.rect(225,325,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle ="#66FF00"
-context.rect(325,225,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle ="#66FF00"
-context.rect(375,225,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle ="#66FF00"
-context.rect(275,325,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(325,375,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle= "#66FF00"
-context.rect(275,375,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(375,375,50,50)
-context.fill() 
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(425,275,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(425,325,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(325,425,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(225,425,50,50)
-context.fill()
-context.beginPath()
-context.fillStyle = "#66FF00"
-context.rect(425,425,50,50)
-context.fill()
-context.beginPath()
-context.fillstyle = "#66FF00"
-context.rect(375,325,50,50)
-context.fill()
-
-
-
+function drawSquare(x,y,width,height){ 
+    context.beginPath();
+    context.fillStyle ="#66FF00";
+    context.rect(x,y,width,height);
+    context.fill();
+    }
+drawSquare(x,y+50,50,50);
+drawSquare(x,y+100,50,50);
+drawSquare(x,y+200, 50,50);
+drawSquare(x+50,y,50,50);
+drawSquare(x+50,y+100,50,50);
+drawSquare(x+50,y+150,50,50);
+drawSquare(x+100,y,50,50);
+drawSquare(x+100,y+150,50,50);
+drawSquare(x+100,y+200,50,50);
+drawSquare(x+100,y+200,50,50);
+drawSquare(x+150,y,50,50);
+drawSquare(x+150,y+100,50,50);
+drawSquare(x+150,y+150,50,50);
+drawSquare(x+200,y+50,50,50);
+drawSquare(x+200,y+100,50,50);
+drawSquare(x+200,y+200,50,50);
